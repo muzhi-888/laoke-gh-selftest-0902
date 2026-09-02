@@ -1,0 +1,47 @@
+{
+  "name": "data-cleaner",
+  "display_name": "表格数据清洗器",
+  "version": "1.0.0",
+  "category": "通用业务",
+  "description": "把脏乱的 CSV/TSV 一键整理成干净规范数据：表头标准化、全角半角归一、货币/千分位/百分比还原、缺失值与占位符检测、重复行去重、字段类型推断，并输出可追溯的质检报告。纯本地、零外链。",
+  "author": "局内人·老K",
+  "license": "MIT",
+  "compatibility": [
+    "WorkBuddy",
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "OpenClaw",
+    "通用SKILL.md宿主"
+  ],
+  "permissions": [
+    "read_file",
+    "write_file"
+  ],
+  "safety": "本地静态处理，不联网、不上传表格内容；原始文件始终保留不被覆盖",
+  "triggers": [
+    "清洗数据",
+    "整理表格",
+    "CSV太脏",
+    "去重",
+    "标准化",
+    "数据整理",
+    "表格规范化",
+    "脏数据",
+    "数据预处理"
+  ],
+  "entry": "SKILL.md",
+  "scripts": [
+    "scripts/clean_tab.py"
+  ],
+  "references": [
+    "references/01-数据质量维度与术语.md",
+    "references/02-常见脏数据模式手册.md",
+    "references/03-清洗规则与标准化清单.md",
+    "references/04-字段类型推断与转换.md",
+    "references/05-清洗后质检SOP.md"
+  ],
+  "files": [
+    "icon.png"
+  ]
+}
